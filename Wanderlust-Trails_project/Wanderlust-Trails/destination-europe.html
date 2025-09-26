@@ -9,19 +9,8 @@
   <!-- Google Fonts (required by brief) -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <!-- Font Awesome (icons for logo/nav & social links) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbilU8F4ZCkxz97uhF1Z9qYFv+2Q9ZyX0f6nQ4J5H0r8i9v8oF1Hn7M7G8eA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
-  
-  <!-- Open Graph for social -->
-  <meta property="og:title" content="Europe · Wanderlust Trails">
-  <meta property="og:description" content="Europe at Wanderlust Trails.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/og-cover.jpg">
-  <script defer src="assets/js/main.js"></script>
-  <script defer src="assets/js/carousel.js"></script>
-  <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "Blog", "name": "Wanderlust Trails", "url": "https://example.com", "description": "A responsive travel blog for destinations, tips, and photo essays.", "inLanguage": "en"}
-  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -40,7 +29,7 @@
           <li class="has-sub"><a href="destinations.html">Destinations</a>
             <ul class="subnav">
               <li><a href="destination-asia.html">Asia</a></li>
-              <li><a href="destination-europe.html">Europe</a></li>
+              <li><a href="europe.html">Europe</a></li>
               <li><a href="destination-australia.html">Australia</a></li>
             </ul>
           </li>
@@ -59,21 +48,28 @@
 
   <main id="main" class="container">
     <h1>Europe</h1>
-    
-<p>Historic cities, art, and food. Sample itinerary and must-try dishes.</p>
-<ul>
-  <li>48-hour city hops via rail pass</li>
-  <li>Free museum days calendar</li>
-  <li>Budget eats near landmarks</li>
-</ul>
-<div class="masonry">
-  <img loading="lazy" src="assets/images/europe-1.jpg" alt="Europe highlight 1">
-<img loading="lazy" src="assets/images/europe-2.jpg" alt="Europe highlight 2">
-<img loading="lazy" src="assets/images/europe-3.jpg" alt="Europe highlight 3">
-<img loading="lazy" src="assets/images/europe-4.jpg" alt="Europe highlight 4">
-</div>
+    <p>Historic cities, art, and food. Plan your rail trips and savor the flavors.</p>
 
+    <div class="cards">
+      <figure class="card">
+        <img loading="lazy" src="assets/images/europe-1.jpg" alt="Europe highlight 1">
+        <figcaption>Paris streets</figcaption>
+      </figure>
+      <figure class="card">
+        <img loading="lazy" src="assets/images/europe-2.jpg" alt="Europe highlight 2">
+        <figcaption>Rome ruins</figcaption>
+      </figure>
+      <figure class="card">
+        <img loading="lazy" src="assets/images/europe-3.jpg" alt="Europe highlight 3">
+        <figcaption>Swiss Alps</figcaption>
+      </figure>
+      <figure class="card">
+        <img loading="lazy" src="assets/images/europe-4.jpg" alt="Europe highlight 4">
+        <figcaption>Amsterdam canals</figcaption>
+      </figure>
+    </div>
   </main>
+
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-grid">
       <div>
@@ -91,15 +87,12 @@
       <div>
         <h4>Follow</h4>
         <p class="social">
-          <!-- Social links with Font Awesome as required -->
-          <a aria-label="Facebook" href="#" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
-          <a aria-label="LinkedIn" href="#" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
-          <a aria-label="Google Plus" href="#" rel="noopener"><i class="fa-brands fa-google-plus-g"></i></a>
-          <a aria-label="Pinterest" href="#" rel="noopener"><i class="fa-brands fa-pinterest"></i></a>
-          <a aria-label="Instagram" href="#" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
-          <a aria-label="X (Twitter)" href="#" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+          <a aria-label="Facebook" href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a aria-label="LinkedIn" href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a aria-label="Pinterest" href="#"><i class="fa-brands fa-pinterest"></i></a>
+          <a aria-label="Instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a aria-label="X (Twitter)" href="#"><i class="fa-brands fa-x-twitter"></i></a>
         </p>
-        <button class="btn small" id="open-deal">Get Deal (Popup)</button>
       </div>
     </div>
     <p class="legal container">© 2025 Wanderlust Trails • Built for WPDD202 Assessment 3</p>
