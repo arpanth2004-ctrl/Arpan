@@ -4,24 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home · Wanderlust Trails</title>
-  <meta name="description" content="A clean, responsive travel blog showcasing destinations, tips, and photo stories.">
+  <meta name="description" content="Wanderlust Trails travel blog. Destinations, tips, and stories.">
   <link rel="canonical" href="/index.html">
   <!-- Google Fonts (required by brief) -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <!-- Font Awesome (icons for logo/nav & social links) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbilU8F4ZCkxz97uhF1Z9qYFv+2Q9ZyX0f6nQ4J5H0r8i9v8oF1Hn7M7G8eA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
-  
-  <!-- Open Graph for social -->
-  <meta property="og:title" content="Home · Wanderlust Trails">
-  <meta property="og:description" content="A clean, responsive travel blog showcasing destinations, tips, and photo stories.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/og-cover.jpg">
-  <script defer src="assets/js/main.js"></script>
-  <script defer src="assets/js/carousel.js"></script>
-  <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "Blog", "name": "Wanderlust Trails", "url": "https://example.com", "description": "A responsive travel blog for destinations, tips, and photo essays.", "inLanguage": "en"}
-  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -40,8 +29,8 @@
           <li class="has-sub"><a href="destinations.html">Destinations</a>
             <ul class="subnav">
               <li><a href="destination-asia.html">Asia</a></li>
-              <li><a href="destination-europe.html">Europe</a></li>
-              <li><a href="destination-australia.html">Australia</a></li>
+              <li><a href="europe.html">Europe</a></li>
+              <li><a href="australia.html">Australia</a></li>
             </ul>
           </li>
           <li><a href="travel-tips.html">Travel Tips</a></li>
@@ -57,84 +46,32 @@
     </div>
   </header>
 
-  <main id="main">
-    <section class="hero" aria-label="Hero banner with parallax">
-      <div class="hero-inner container">
-        <h1>Find your next adventure.</h1>
-        <p>Clean, visual stories from a crew of travel geeks.</p>
-        <div class="hero-cta">
-          <a class="btn" href="destinations.html"><i class="fa-solid fa-map-location-dot"></i> Explore Destinations</a>
-          <button class="btn outline" id="newsletter-btn"><i class="fa-solid fa-envelope-open-text"></i> Newsletter (Popup)</button>
-        </div>
-      </div>
-    </section>
+  <main id="main" class="container">
+    <h1>Welcome to Wanderlust Trails</h1>
+    <p>Discover destinations, get travel tips, and enjoy stories from global adventures.</p>
 
-    <section class="featured container" aria-label="Featured posts carousel">
-      <h2 class="section-title">Featured</h2>
-      <div class="carousel" data-autoplay="true" data-interval="5000" aria-roledescription="carousel">
-        <div class="carousel-track">
-          <!-- Note: 20+ images across site; placeholders here -->
-          <article class="card slide"><img loading="lazy" src="assets/images/feature-1.jpg" alt="Featured travel photo 1"><div class="card-body"><h3>Story 1: Epic Place</h3><p>Short teaser for epic place #1 with tips and highlights.</p><a href="photo-essays.html" class="arrow-link">Read more</a></div></article>
-<article class="card slide"><img loading="lazy" src="assets/images/feature-2.jpg" alt="Featured travel photo 2"><div class="card-body"><h3>Story 2: Epic Place</h3><p>Short teaser for epic place #2 with tips and highlights.</p><a href="photo-essays.html" class="arrow-link">Read more</a></div></article>
-<article class="card slide"><img loading="lazy" src="assets/images/feature-3.jpg" alt="Featured travel photo 3"><div class="card-body"><h3>Story 3: Epic Place</h3><p>Short teaser for epic place #3 with tips and highlights.</p><a href="photo-essays.html" class="arrow-link">Read more</a></div></article>
-<article class="card slide"><img loading="lazy" src="assets/images/feature-4.jpg" alt="Featured travel photo 4"><div class="card-body"><h3>Story 4: Epic Place</h3><p>Short teaser for epic place #4 with tips and highlights.</p><a href="photo-essays.html" class="arrow-link">Read more</a></div></article>
-<article class="card slide"><img loading="lazy" src="assets/images/feature-5.jpg" alt="Featured travel photo 5"><div class="card-body"><h3>Story 5: Epic Place</h3><p>Short teaser for epic place #5 with tips and highlights.</p><a href="photo-essays.html" class="arrow-link">Read more</a></div></article>
-<article class="card slide"><img loading="lazy" src="assets/images/feature-6.jpg" alt="Featured travel photo 6"><div class="card-body"><h3>Story 6: Epic Place</h3><p>Short teaser for epic place #6 with tips and highlights.</p><a href="photo-essays.html" class="arrow-link">Read more</a></div></article>
-        </div>
-        <button class="carousel-prev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
-        <button class="carousel-next" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
-        <div class="carousel-dots" role="tablist" aria-label="Choose slide"></div>
-      </div>
-    </section>
-
-    <section class="quote" aria-label="Inspiring quote">
-      <blockquote class="container">
-        <p>“Travel makes one modest. You see what a tiny place you occupy in the world.”</p>
-        <cite>— Gustave Flaubert</cite>
-      </blockquote>
-    </section>
-
-    <section class="grid-3 container" aria-label="Popular categories">
-      <article class="tile">
-        <img loading="lazy" src="assets/images/cat-destinations.jpg" alt="Mountain viewpoint at sunrise">
-        <h3><a href="destinations.html">Destinations</a></h3>
-        <p>Browse continents and cities with maps, budgets, and must-dos.</p>
-      </article>
-      <article class="tile">
-        <img loading="lazy" src="assets/images/cat-tips.jpg" alt="Traveler planning with notebook">
-        <h3><a href="travel-tips.html">Travel Tips</a></h3>
-        <p>Packing, visas, safety, and saving money without missing out.</p>
-      </article>
-      <article class="tile">
-        <img loading="lazy" src="assets/images/cat-photos.jpg" alt="Camera on a cliff edge">
-        <h3><a href="photo-essays.html">Photo Essays</a></h3>
-        <p>Visual stories with minimal text and maximum feels.</p>
-      </article>
-    </section>
-
-    <section class="parallax" aria-hidden="true" title="Parallax background"></section>
-
-    <section class="media container" aria-label="Multimedia">
-      <h2 class="section-title">Watch & Listen</h2>
-      <div class="media-grid">
-        <figure>
-          <!-- If you use third-party media, cite it near the tag as required -->
-          <!-- Source: group-shot.mp4 by our team -->
-          <video controls preload="metadata" poster="assets/images/video-poster.jpg">
-            <source src="assets/media/intro.mp4" type="video/mp4">
-          </video>
-          <figcaption>Two minutes of trail highlights.</figcaption>
-        </figure>
-        <figure>
-          <!-- Source: theme.mp3 by our team -->
-          <audio controls preload="metadata">
-            <source src="assets/media/theme.mp3" type="audio/mpeg">
-          </audio>
-          <figcaption>Podcast teaser: packing light, traveling far.</figcaption>
-        </figure>
-      </div>
-    </section>
+    <div class="cards">
+      <figure class="card">
+        <a href="destinations.html">
+          <img src="assets/images/home-1.jpg" alt="Destinations preview">
+          <figcaption>Destinations</figcaption>
+        </a>
+      </figure>
+      <figure class="card">
+        <a href="travel-tips.html">
+          <img src="assets/images/home-2.jpg" alt="Tips preview">
+          <figcaption>Travel Tips</figcaption>
+        </a>
+      </figure>
+      <figure class="card">
+        <a href="photo-essays.html">
+          <img src="assets/images/home-3.jpg" alt="Photo stories preview">
+          <figcaption>Photo Essays</figcaption>
+        </a>
+      </figure>
+    </div>
   </main>
+
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-grid">
       <div>
@@ -152,15 +89,12 @@
       <div>
         <h4>Follow</h4>
         <p class="social">
-          <!-- Social links with Font Awesome as required -->
-          <a aria-label="Facebook" href="#" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
-          <a aria-label="LinkedIn" href="#" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
-          <a aria-label="Google Plus" href="#" rel="noopener"><i class="fa-brands fa-google-plus-g"></i></a>
-          <a aria-label="Pinterest" href="#" rel="noopener"><i class="fa-brands fa-pinterest"></i></a>
-          <a aria-label="Instagram" href="#" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
-          <a aria-label="X (Twitter)" href="#" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+          <a aria-label="Facebook" href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a aria-label="LinkedIn" href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a aria-label="Pinterest" href="#"><i class="fa-brands fa-pinterest"></i></a>
+          <a aria-label="Instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a aria-label="X (Twitter)" href="#"><i class="fa-brands fa-x-twitter"></i></a>
         </p>
-        <button class="btn small" id="open-deal">Get Deal (Popup)</button>
       </div>
     </div>
     <p class="legal container">© 2025 Wanderlust Trails • Built for WPDD202 Assessment 3</p>
