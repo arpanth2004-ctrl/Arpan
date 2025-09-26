@@ -9,19 +9,8 @@
   <!-- Google Fonts (required by brief) -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <!-- Font Awesome (icons for logo/nav & social links) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbilU8F4ZCkxz97uhF1Z9qYFv+2Q9ZyX0f6nQ4J5H0r8i9v8oF1Hn7M7G8eA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
-  
-  <!-- Open Graph for social -->
-  <meta property="og:title" content="Gallery · Wanderlust Trails">
-  <meta property="og:description" content="Gallery at Wanderlust Trails.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/og-cover.jpg">
-  <script defer src="assets/js/main.js"></script>
-  <script defer src="assets/js/carousel.js"></script>
-  <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "Blog", "name": "Wanderlust Trails", "url": "https://example.com", "description": "A responsive travel blog for destinations, tips, and photo essays.", "inLanguage": "en"}
-  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -40,8 +29,8 @@
           <li class="has-sub"><a href="destinations.html">Destinations</a>
             <ul class="subnav">
               <li><a href="destination-asia.html">Asia</a></li>
-              <li><a href="destination-europe.html">Europe</a></li>
-              <li><a href="destination-australia.html">Australia</a></li>
+              <li><a href="europe.html">Europe</a></li>
+              <li><a href="australia.html">Australia</a></li>
             </ul>
           </li>
           <li><a href="travel-tips.html">Travel Tips</a></li>
@@ -59,20 +48,28 @@
 
   <main id="main" class="container">
     <h1>Gallery</h1>
-    
-<p>All-time favourites. Click to open in a lightbox.</p>
-<div class="responsive-grid lightbox">
-  <a href="assets/images/gallery-1.jpg" class="lightbox-link"><img loading="lazy" src="assets/images/gallery-1.jpg" alt="Gallery image 1"></a>
-<a href="assets/images/gallery-2.jpg" class="lightbox-link"><img loading="lazy" src="assets/images/gallery-2.jpg" alt="Gallery image 2"></a>
-<a href="assets/images/gallery-3.jpg" class="lightbox-link"><img loading="lazy" src="assets/images/gallery-3.jpg" alt="Gallery image 3"></a>
-<a href="assets/images/gallery-4.jpg" class="lightbox-link"><img loading="lazy" src="assets/images/gallery-4.jpg" alt="Gallery image 4"></a>
-<a href="assets/images/gallery-5.jpg" class="lightbox-link"><img loading="lazy" src="assets/images/gallery-5.jpg" alt="Gallery image 5"></a>
-<a href="assets/images/gallery-6.jpg" class="lightbox-link"><img loading="lazy" src="assets/images/gallery-6.jpg" alt="Gallery image 6"></a>
-<a href="assets/images/gallery-7.jpg" class="lightbox-link"><img loading="lazy" src="assets/images/gallery-7.jpg" alt="Gallery image 7"></a>
-<a href="assets/images/gallery-8.jpg" class="lightbox-link"><img loading="lazy" src="assets/images/gallery-8.jpg" alt="Gallery image 8"></a>
-</div>
+    <p>Our favorite travel moments in pictures.</p>
 
+    <div class="cards">
+      <figure class="card">
+        <img loading="lazy" src="assets/images/gallery-1.jpg" alt="Gallery photo 1">
+        <figcaption>Beach sunset</figcaption>
+      </figure>
+      <figure class="card">
+        <img loading="lazy" src="assets/images/gallery-2.jpg" alt="Gallery photo 2">
+        <figcaption>Street food</figcaption>
+      </figure>
+      <figure class="card">
+        <img loading="lazy" src="assets/images/gallery-3.jpg" alt="Gallery photo 3">
+        <figcaption>Temple view</figcaption>
+      </figure>
+      <figure class="card">
+        <img loading="lazy" src="assets/images/gallery-4.jpg" alt="Gallery photo 4">
+        <figcaption>Mountain hike</figcaption>
+      </figure>
+    </div>
   </main>
+
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-grid">
       <div>
@@ -90,15 +87,12 @@
       <div>
         <h4>Follow</h4>
         <p class="social">
-          <!-- Social links with Font Awesome as required -->
-          <a aria-label="Facebook" href="#" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
-          <a aria-label="LinkedIn" href="#" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
-          <a aria-label="Google Plus" href="#" rel="noopener"><i class="fa-brands fa-google-plus-g"></i></a>
-          <a aria-label="Pinterest" href="#" rel="noopener"><i class="fa-brands fa-pinterest"></i></a>
-          <a aria-label="Instagram" href="#" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
-          <a aria-label="X (Twitter)" href="#" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+          <a aria-label="Facebook" href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a aria-label="LinkedIn" href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a aria-label="Pinterest" href="#"><i class="fa-brands fa-pinterest"></i></a>
+          <a aria-label="Instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a aria-label="X (Twitter)" href="#"><i class="fa-brands fa-x-twitter"></i></a>
         </p>
-        <button class="btn small" id="open-deal">Get Deal (Popup)</button>
       </div>
     </div>
     <p class="legal container">© 2025 Wanderlust Trails • Built for WPDD202 Assessment 3</p>
