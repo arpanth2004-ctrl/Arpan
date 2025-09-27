@@ -25,56 +25,64 @@ form{background:#fff;border:1px solid #ddd;padding:1rem;border-radius:8px;margin
 label{display:block;margin-bottom:.3rem;font-weight:600}
 input,textarea,select{width:100%;padding:.6rem;border:1px solid #ccc;border-radius:6px}
 
-/* ---------- Cards / Image Grid ---------- */
+/* ---------- Cards ---------- */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem;margin:1rem 0}
 .card{
   background:#fff;border:1px solid #e6e6e6;border-radius:12px;
   overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.08);
   display:flex;flex-direction:column;justify-content:space-between;
 }
-.card img{
-  width:100%;
-  aspect-ratio:16/9;
-  object-fit:cover;
-  border-radius:12px 12px 0 0;
-}
-.card figcaption{
-  text-align:center;
-  padding:0.9rem 0.8rem;
-  font-weight:700;
-  color:#444;
-  font-size:1.15rem;
-}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px 12px 0 0}
+.card figcaption{text-align:center;padding:0.9rem;font-weight:700;color:#444;font-size:1.15rem}
 .card:hover{transform:translateY(-2px);transition:.2s;box-shadow:0 8px 22px rgba(0,0,0,.12)}
 
-/* ---------- Video embeds ---------- */
+/* ---------- Video ---------- */
 figure iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:12px;background:#000}
+
+/* ---------- Carousel ---------- */
+.carousel{position:relative;overflow:hidden;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,.08);background:#000;margin-top:1rem}
+.carousel .track{display:flex;transition:transform .5s ease}
+.carousel img{width:100%;flex:0 0 100%;aspect-ratio:16/9;object-fit:cover}
+.car-btn{
+  position:absolute;top:50%;transform:translateY(-50%);
+  background:rgba(0,0,0,.45);color:#fff;border:none;width:40px;height:40px;
+  border-radius:50%;cursor:pointer;font-size:1.2rem;line-height:40px;text-align:center
+}
+.car-btn:hover{background:rgba(0,0,0,.65)}
+.car-btn.prev{left:.5rem}
+.car-btn.next{right:.5rem}
+
+/* ---------- Quote section ---------- */
+.quote{
+  background:#fff;border:1px solid #e6e6e6;border-radius:12px;
+  padding:1.5rem;margin:1.5rem 0;box-shadow:0 4px 16px rgba(0,0,0,.06)
+}
+.quote blockquote{font-size:1.15rem;text-align:center}
+.quote cite{display:block;margin-top:.4rem;color:#666}
+
+/* ---------- Parallax banner ---------- */
+.parallax{
+  height:260px;border-radius:12px;margin:1.5rem 0;
+  background:url('parallax.jpg') center/cover fixed no-repeat;
+  box-shadow:0 4px 16px rgba(0,0,0,.08)
+}
+@media (max-width:640px){
+  .parallax{background-attachment:scroll;} /* mobile-friendly fallback */
+}
 
 /* ---------- Footer ---------- */
 .site-footer{background:#333;color:#fff;text-align:center;padding:1rem 0;margin-top:2rem}
 .site-footer a{color:#fff;margin:0 .5rem}
 
-/* ---------- Back to Top button ---------- */
-#backToTop {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  background: #0077cc;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s, background 0.3s, transform 0.2s;
+/* ---------- Back to Top ---------- */
+#backToTop{
+  position:fixed;bottom:1rem;right:1rem;background:#0077cc;color:#fff;border:none;border-radius:50%;
+  width:48px;height:48px;font-size:1.2rem;font-weight:bold;cursor:pointer;
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);display:none;opacity:0;
+  transition:opacity .3s,background .3s,transform .2s
 }
-#backToTop.show { display: block; opacity: 1; }
-#backToTop:hover { background: #005fa3; transform: translateY(-3px); }
+#backToTop.show{display:block;opacity:1}
+#backToTop:hover{background:#005fa3;transform:translateY(-3px)}
 
 /* ---------- Small screens ---------- */
 @media (max-width:640px){
