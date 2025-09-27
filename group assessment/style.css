@@ -1,0 +1,83 @@
+/* ---------- Base ---------- */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Poppins",Arial,sans-serif;background:#f9f9f9;color:#222;line-height:1.6}
+a{color:#0077cc;text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+.container{width:min(1100px,90%);margin:auto;padding:1rem 0}
+
+/* ---------- Header & Nav ---------- */
+.site-header{background:#333;color:#fff;padding:.8rem 0;position:sticky;top:0;z-index:100}
+.brand{font-weight:700;font-size:1.2rem;color:#fff}
+.site-nav{list-style:none;display:flex;flex-wrap:wrap;gap:1rem}
+.site-nav a{color:#fff;padding:.3rem .6rem;border-radius:6px}
+.site-nav a:hover,.site-nav a[aria-current="page"]{background:#0077cc}
+
+/* ---------- Typography ---------- */
+h1,h2{margin:1rem 0;color:#333}
+p,li{margin-bottom:.6rem}
+
+/* ---------- Buttons & Forms ---------- */
+.btn,button{background:#0077cc;color:#fff;padding:.6rem 1rem;border:none;border-radius:6px;cursor:pointer}
+.btn:hover,button:hover{background:#005fa3}
+form{background:#fff;border:1px solid #ddd;padding:1rem;border-radius:8px;margin-top:1rem}
+.field{margin-bottom:1rem}
+label{display:block;margin-bottom:.3rem;font-weight:600}
+input,textarea,select{width:100%;padding:.6rem;border:1px solid #ccc;border-radius:6px}
+
+/* ---------- Cards / Image Grid ---------- */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem;margin:1rem 0}
+.card{
+  background:#fff;border:1px solid #e6e6e6;border-radius:12px;
+  overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.08);
+  display:flex;flex-direction:column;justify-content:space-between;
+}
+.card img{
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  border-radius:12px 12px 0 0;
+}
+.card figcaption{
+  text-align:center;
+  padding:0.9rem 0.8rem;
+  font-weight:700;
+  color:#444;
+  font-size:1.15rem;
+}
+.card:hover{transform:translateY(-2px);transition:.2s;box-shadow:0 8px 22px rgba(0,0,0,.12)}
+
+/* ---------- Video embeds ---------- */
+figure iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:12px;background:#000}
+
+/* ---------- Footer ---------- */
+.site-footer{background:#333;color:#fff;text-align:center;padding:1rem 0;margin-top:2rem}
+.site-footer a{color:#fff;margin:0 .5rem}
+
+/* ---------- Back to Top button ---------- */
+#backToTop {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s, background 0.3s, transform 0.2s;
+}
+#backToTop.show { display: block; opacity: 1; }
+#backToTop:hover { background: #005fa3; transform: translateY(-3px); }
+
+/* ---------- Small screens ---------- */
+@media (max-width:640px){
+  .site-nav{gap:.6rem}
+  .card figcaption{font-size:1rem}
+}
